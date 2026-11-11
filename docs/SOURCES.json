@@ -1,0 +1,109 @@
+{
+  "basis": "Accepted local documentation, observed 2026-11-11. Editions are not an automatic current-law service.",
+  "sources": [
+    {
+      "source_id": "PFANDBG",
+      "official_url": "https://www.gesetze-im-internet.de/pfandbg/BJNR137310005.html",
+      "edition": "Stand:  | Zuletzt geändert durch Art. 23 G v. 25.3.2026 I Nr. 81",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "0bb93d680386f2789d3630587f3ed00417e6f939808d53ad8c6104a77ef0a7ed",
+      "original_sha256": null
+    },
+    {
+      "source_id": "BELWERTV",
+      "official_url": "https://www.gesetze-im-internet.de/belwertv/BJNR117500006.html",
+      "edition": "Stand:  | Zuletzt geändert durch Art. 5 V v. 4.10.2022 I 1614",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "4730c6474427fbacc8a717f1342e34aae9fa0ca6b890e46d8a6ef83f840a1422",
+      "original_sha256": null
+    },
+    {
+      "source_id": "SCHIFFSBELWERTV",
+      "official_url": "https://www.gesetze-im-internet.de/schiffsbelwertv/BJNR085100008.html",
+      "edition": "Stand:  | Geändert durch Art. 6 V v. 4.10.2022 I 1614",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "f05a9a1bc4c55ab1280fc58ff289b2af1bd404a5f0cc26d219444c45f53ae160",
+      "original_sha256": null
+    },
+    {
+      "source_id": "FLUGBELWERTV",
+      "official_url": "https://www.gesetze-im-internet.de/flugbelwertv/BJNR103600009.html",
+      "edition": "Stand:  | Geändert durch Art. 7 V v. 4.10.2022 I 1614",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "6186b4568988ecc8171a183588525719383a050bcc1acd5436759e0e0578e3b4",
+      "original_sha256": null
+    },
+    {
+      "source_id": "PFANDBARWERTV",
+      "official_url": "https://www.gesetze-im-internet.de/pfandbarwertv_2005/BJNR216500005.html",
+      "edition": "Stand:  | Zuletzt geändert durch Art. 2 V v. 4.10.2022 I 1614",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "d4b31bd675aa14b744972837889565d5f48d47696f684e1a2bbc97a72cdd4b7f",
+      "original_sha256": null
+    },
+    {
+      "source_id": "DECKREGV",
+      "official_url": "https://www.gesetze-im-internet.de/deckregv/BJNR207400006.html",
+      "edition": "Stand:  | Zuletzt geändert durch Art. 24 G v. 25.3.2026 I Nr. 81",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "70a399f0d08ecc6204d891d5825f7f80dbd13614bb35ad24b2eb1a0e23835b51",
+      "original_sha256": null
+    },
+    {
+      "source_id": "PFANDMELDEV",
+      "official_url": "https://www.gesetze-im-internet.de/pfandmeldev/BJNR161410022.html",
+      "edition": null,
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "305f41e4bbb446568d179e5a669474019335c8336f59cb14407d99e7833f7010",
+      "original_sha256": null
+    },
+    {
+      "source_id": "REFIREGV",
+      "official_url": "https://www.gesetze-im-internet.de/refiregv/BJNR324100006.html",
+      "edition": "Stand:  | Geändert durch Art. 8 V v. 4.10.2022 I 1614",
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "da3c8ae33ae3e58338f7ed3a551542b516126e9fd0c94f29d3de9b08b2c7125c",
+      "original_sha256": null
+    },
+    {
+      "source_id": "IMMOWERTV_A3",
+      "official_url": "https://www.gesetze-im-internet.de/immowertv_2022/anlage_3.html",
+      "edition": null,
+      "representation": "OFFICIAL_SITE_BROWSER_TEXT",
+      "text_sha256": "7302af6a803ae9787b3983b898a07d9c7822202c81fcbec2f4edda4968181642",
+      "original_sha256": null
+    },
+    {
+      "source_id": "CRR_20260626_DE",
+      "official_url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02013R0575-20260626",
+      "edition": "02013R0575 — DE — 26.06.2026 — 021.004",
+      "representation": "USER_PROVIDED_PUBLICATIONS_OFFICE_PDF",
+      "text_sha256": "8dff7402369c86c67da24c9b0f3f9e015d0b6566348d04b40f9007dd3dee6726",
+      "original_sha256": "dad58b4043f9b727e95abb933ee6941dffbf7774f3a0df28692559fc535ac0cf"
+    },
+    {
+      "source_id": "LCR_20220708_DE",
+      "official_url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02015R0061-20220708",
+      "edition": "02015R0061 — DE — 08.07.2022 — 002.001",
+      "representation": "USER_PROVIDED_PUBLICATIONS_OFFICE_PDF",
+      "text_sha256": "365a284c3c4a59fbcb2bc401a591b831891582055639e96f7778aaa64175141f",
+      "original_sha256": "40bbb352faeae7c96a774a5442386adcb12cc79f33a154d4a7a485888e048ca5"
+    },
+    {
+      "source_id": "CBD_2019_DE",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2019/2162/oj/deu",
+      "edition": "OJ L328/29, 18.12.2019; directive 2019/2162 of 27.11.2019",
+      "representation": "USER_PROVIDED_PUBLICATIONS_OFFICE_PDF",
+      "text_sha256": "398ace45ab1f593be568a6ba51f40cbeddefb284f9179bc9ba46834b4aab14c6",
+      "original_sha256": "ac0c04ebb0e35bd8f9885b5e09bcc060a3119fe719ed3df4cd991fa30cc985ba"
+    },
+    {
+      "source_id": "BAFIN_CAP_20240101",
+      "official_url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Bekanntgabe_BelWertV/2023_12_08_Bekanntgabe_Mindestkapitalisierungszinssaetze_2024_01_01.html",
+      "edition": "Notice 2023-12-08, effective from 2024-01-01 until subsequent adjustment",
+      "representation": "USER_BROWSER_PRINT_IMAGE_ONLY",
+      "text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+      "original_sha256": "909a71451df03fdc9dc021427550edf06a4a2cd0f82a6392732b8c3171e590c5"
+    }
+  ]
+}

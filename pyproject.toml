@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pfandbriefcalc"
+version = "0.1.0"
+description = "Native calculations and auditable controls for German Pfandbriefe"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "RiskDataScience GmbH"}]
+maintainers = [{name = "Dr. Dimitrios Geromichalos", email = "riskdatascience@web.de"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Topic :: Office/Business :: Financial",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pfandbriefcalc*"]
+
+[tool.setuptools.package-data]
+pfandbriefcalc = ["resources/*.md", "resources/*.json", "resources/methods/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

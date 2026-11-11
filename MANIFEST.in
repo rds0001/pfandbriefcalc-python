@@ -1,0 +1,6 @@
+include LICENSE README.md pyproject.toml
+recursive-include src/pfandbriefcalc *.py *.csv *.json
+recursive-include src/pfandbriefcalc/resources *.md
+recursive-include docs *.md *.json
+recursive-include tests *.py *.csv
+global-exclude __pycache__ *.pyc
