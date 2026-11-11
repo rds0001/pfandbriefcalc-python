@@ -1,0 +1,63 @@
+name: Publish to PyPI
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pypi-publish
+  cancel-in-progress: false
+jobs:
+  build:
+    name: Build and validate distributions
+    if: github.repository == 'rds0001/pfandbriefcalc-python' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Require successful Python CI for this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          sha = os.environ["GITHUB_SHA"]
+          endpoint = f"repos/{os.environ['GITHUB_REPOSITORY']}/actions/workflows/ci.yml/runs?head_sha={sha}&event=push"
+          runs = json.loads(subprocess.check_output(["gh", "api", endpoint], text=True))["workflow_runs"]
+          if not runs or runs[0]["head_sha"] != sha or runs[0]["status"] != "completed" or runs[0]["conclusion"] != "success":
+              raise SystemExit("Publish requires successful Python CI for this exact commit.")
+          print("Verified Python CI:", runs[0]["html_url"])
+          PY
+      - name: Build and check release artifacts
+        run: |
+          python -m pip install build twine
+          python -m build
+          python -m twine check --strict dist/*
+          python .github/scripts/check_installed.py
+      - uses: actions/upload-artifact@v7
+        with:
+          name: python-distributions
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30
+  publish:
+    name: Publish distributions to PyPI
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pfandbriefcalc
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: python-distributions
+          path: dist/
+      - name: Publish with Trusted Publishing
+        uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # release/v1
